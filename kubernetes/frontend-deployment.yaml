@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ss-client
+  namespace: default
+  labels:
+    app: ss-client
+spec:
+  selector:
+    matchLabels:
+      app: ss-client
+  template:
+    metadata:
+      labels:
+        app: ss-client
+    spec:
+      containers:
+        - name: ss-frontend
+          image: supreethv/successsamurai-frontend
+          ports:
+            - containerPort: 3000

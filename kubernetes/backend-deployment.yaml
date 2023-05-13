@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ss-server
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ss-server
+  template:
+    metadata:
+      labels:
+        app: ss-server
+    spec:
+      containers:
+        - name: ss-server
+          image: supreethv/successsamurai-backend
+          ports:
+            - name: http
+              containerPort: 5000

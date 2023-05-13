@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ss-client-service
+  namespace: default
+spec:
+  type: LoadBalancer
+  selector:
+    app: ss-client
+  ports:
+    - name: http
+      port: 3000
+      targetPort: 3000

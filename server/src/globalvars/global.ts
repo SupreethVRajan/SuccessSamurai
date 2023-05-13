@@ -1,0 +1,4 @@
+export const MONGO_URI = "mongodb+srv://SuccessSamuraiServer:qwertyuiop@successsamurai.q9b90av.mongodb.net/?retryWrites=true&w=majority"
+export const JWT_SECRET = "5f741b68affea90186b087c70daf8e1c098d64455810cb8192cbaa80f2736290ed278aacd74f02767db629a236c7915ee3baa7c5d1ee1e5369d1044314a7ce0c"
+export const STRIPE_PUBLISHABLE_KEY = "pk_test_51N7BDjSGRhw1UqYuyiX4P2xYt4HWdoQUwpHH0zGiybbhfQi5f9p7satB0rXm4rvoZIVGrkAsh7jdqTcaMMeDTaZL00lPPL99ut"
+export const STRIPE_SECRET_KEY = "sk_test_51N7BDjSGRhw1UqYuUCTgke6Knx1L89hx7Z9am364wcNhZW2vK9xINVc8MxfTo1j0Mjko0P8A3DviylGdXIkfJlra00oIRlcbOb"
