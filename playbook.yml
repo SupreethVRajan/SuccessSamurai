@@ -15,6 +15,11 @@
         state: present
         definition: "{{ lookup('file', './kubernetes/backend-deployment.yaml') | from_yaml }}"
 
+    - name: Create Ingress Service
+      kubernetes.core.k8s:
+        state: present
+        definition: "{{ lookup('file', './kubernetes/ingress-service.yaml') | from_yaml }}"
+
     - name: Create Backend Service
       kubernetes.core.k8s:
         state: present

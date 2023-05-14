@@ -35,7 +35,9 @@ const UserProvider = ({children}: any) => {
     }
 
     const fetchUser = async () => {
-        const {data: response} =await axios.get("http://localhost:5000/auth/me");
+        const { data: response } = await axios.get("http://localhost:5000/auth/me");
+        
+        console.log("Reaching this point")
 
         if (response.data && response.data.user) {
             setUser({

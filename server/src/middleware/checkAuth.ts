@@ -1,4 +1,3 @@
-import { equal } from "assert";
 import {Request, Response, NextFunction} from "express";
 import JWT from "jsonwebtoken";
 import * as global from "../globalvars/global"
@@ -8,7 +7,7 @@ export const checkAuth = async (req: Request, res: Response, next: NextFunction)
     let token = req.header("authorization");
 
     if (!token) {
-        return res.status(403).json({
+        return res.json({
             errors: [
                 {
                     msg: "Unauthorized",
@@ -28,7 +27,7 @@ export const checkAuth = async (req: Request, res: Response, next: NextFunction)
         req.user = user.email as string;
         next();
     } catch (error) {
-        return res.status(403).json({
+        return res.json({
             errors: [
                 {
                     msg: "Unauthorized",
