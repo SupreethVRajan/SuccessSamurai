@@ -7,19 +7,18 @@ import * as global from "./globalvars/global";
 import cors from "cors";
 
 
+const app = express();
+
+app.use(express.json());
+app.use(cors())
+app.use("/auth", authRoutes);
+app.use("/subs", subsRoutes);
+app.use("/articles", articleRoutes);
 
 mongoose.connect(
     global.MONGO_URI
 )
 .then(() => {
-
-    const app = express();
-
-    app.use(express.json());
-    app.use(cors())
-    app.use("/auth", authRoutes);
-    app.use("/subs", subsRoutes);
-    app.use("/articles", articleRoutes);
 
     console.log("Connected to MongoDB");
 
@@ -32,3 +31,4 @@ mongoose.connect(
     throw new Error(error)
 })
 
+export default app;
