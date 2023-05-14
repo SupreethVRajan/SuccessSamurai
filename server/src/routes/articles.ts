@@ -4,6 +4,7 @@ import * as global from "../globalvars/global"
 import { checkAuth } from "../middleware/checkAuth";
 import { stripe } from "../Utils/stripe";
 import Article from "../models/article";
+import logger from "../../logs/logging";
 
 
 const router = express.Router();
@@ -23,10 +24,14 @@ router.get("/", checkAuth, async (req, res) => {
             }
         );
 
-        if (!subscriptions.data.length) return res.json([]);
+        if (!subscriptions.data.length) {
+            logger.info("Subscription not available yet");
+            return res.json([]);
+        }
 
         //@ts-ignore
         const plan = subscriptions.data[0].plan.nickname;
+        logger.info("Subscriptions successfully retreived");
 
         if (plan === "Basic") {
             const articles = await Article.find({ access: "Basic" });
@@ -40,6 +45,7 @@ router.get("/", checkAuth, async (req, res) => {
             const articles = await Article.find({});
             return res.json(articles);
         }
+        
     }
 })
 

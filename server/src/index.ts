@@ -5,6 +5,7 @@ import articleRoutes from "./routes/articles";
 import mongoose from "mongoose";
 import * as global from "./globalvars/global";
 import cors from "cors";
+import logger from "../logs/logging";
 
 
 const app = express();
@@ -18,9 +19,11 @@ app.use("/articles", articleRoutes);
 mongoose.connect(
     global.MONGO_URI
 )
-.then(() => {
+    .then(() => {
+    
+        logger.error("Mongo DB connection successful");
 
-    console.log("Connected to MongoDB");
+        console.log("Connected to MongoDB");
 
     app.listen(5000, () => {
         console.log(`Now listening to port 5000`);
@@ -28,6 +31,7 @@ mongoose.connect(
 })
 .catch((error) => {
     console.log(error)
+    logger.error("Mongo DB connection failed");
     throw new Error(error)
 })
 

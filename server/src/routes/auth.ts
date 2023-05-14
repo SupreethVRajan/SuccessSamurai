@@ -6,6 +6,7 @@ import bcrypt from "bcryptjs"
 import * as global from "../globalvars/global"
 import { checkAuth } from "../middleware/checkAuth";
 import { stripe } from "../Utils/stripe";
+import logger from "../../logs/logging";
 
 const router = express.Router();
 
@@ -16,7 +17,9 @@ router.post(
     async (req, res) => {
         const validationErrors = validationResult(req);
 
-        if(!validationErrors.isEmpty()) {
+        if (!validationErrors.isEmpty()) {
+            logger.error("Invalid credentials for Signup");
+            
             const errors = validationErrors.array().map(error => {
                 return {
                     msg: error.msg,
@@ -34,6 +37,7 @@ router.post(
         const user = await User.findOne({email})
 
         if (user) {
+            logger.error("Email already exists for Signup");
             return res.json({
                 errors: [
                     {
@@ -65,6 +69,8 @@ router.post(
                 expiresIn: 10800
             }
         );
+
+        logger.info("User successfully created");
         
         return res.json({errors: [],
         data: {
@@ -85,6 +91,7 @@ router.post("/login", async (req, res) =>  {
     const user = await User.findOne({email});
 
     if (!user) {
+        logger.error("Email does not exists for Login");
         return res.json({
             errors: [
                 {
@@ -98,6 +105,7 @@ router.post("/login", async (req, res) =>  {
     const isMatch = await bcrypt.compare(password, user.password as string);
 
     if (!isMatch) {
+        logger.error("Invalid credentials for Login");
         return res.json({
             errors: [
                 {
@@ -116,6 +124,8 @@ router.post("/login", async (req, res) =>  {
         }
     );
 
+    logger.info("User successfully logged in");
+
     return res.json({
         errors: [],
         data: {
@@ -131,7 +141,9 @@ router.post("/login", async (req, res) =>  {
 router.get("/me", checkAuth, async (req, res) => {
     const user = await User.findOne({email: req.user})
 
-    if(user) {
+    if (user) {
+        
+        logger.info("User found for ME route");
         return res.json({
             errors: [],
             data: {
@@ -144,6 +156,7 @@ router.get("/me", checkAuth, async (req, res) => {
         })
     }
     else {
+        logger.error("User not found for ME route");        
         return res.json({
             errors: [
                 {
