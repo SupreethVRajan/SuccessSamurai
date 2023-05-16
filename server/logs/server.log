@@ -53,3 +53,335 @@
 {"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-14T14:08:24.834Z"}
 {"level":"info","message":"User successfully authenticated","timestamp":"2023-05-14T14:08:24.871Z"}
 {"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-14T14:08:25.245Z"}
+{"level":"error","message":"Mongo DB connection successful","timestamp":"2023-05-15T16:00:26.022Z"}
+{"expiredAt":"2023-05-14T20:04:39.000Z","level":"error","message":"User not authenticated jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /home/supreeth/SuccessSamurai/server/node_modules/jsonwebtoken/verify.js:190:21\n    at getSecret (/home/supreeth/SuccessSamurai/server/node_modules/jsonwebtoken/verify.js:97:14)\n    at Object.module.exports [as verify] (/home/supreeth/SuccessSamurai/server/node_modules/jsonwebtoken/verify.js:101:10)\n    at /home/supreeth/SuccessSamurai/server/src/middleware/checkAuth.ts:24:33\n    at Generator.next (<anonymous>)\n    at /home/supreeth/SuccessSamurai/server/src/middleware/checkAuth.ts:31:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/supreeth/SuccessSamurai/server/src/middleware/checkAuth.ts:27:12)\n    at checkAuth (/home/supreeth/SuccessSamurai/server/src/middleware/checkAuth.ts:6:84)\n    at Layer.handle [as handle_request] (/home/supreeth/SuccessSamurai/server/node_modules/express/lib/router/layer.js:95:5)","timestamp":"2023-05-15T16:00:33.935Z"}
+{"expiredAt":"2023-05-14T20:04:39.000Z","level":"error","message":"User not authenticated jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /home/supreeth/SuccessSamurai/server/node_modules/jsonwebtoken/verify.js:190:21\n    at getSecret (/home/supreeth/SuccessSamurai/server/node_modules/jsonwebtoken/verify.js:97:14)\n    at Object.module.exports [as verify] (/home/supreeth/SuccessSamurai/server/node_modules/jsonwebtoken/verify.js:101:10)\n    at /home/supreeth/SuccessSamurai/server/src/middleware/checkAuth.ts:24:33\n    at Generator.next (<anonymous>)\n    at /home/supreeth/SuccessSamurai/server/src/middleware/checkAuth.ts:31:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/supreeth/SuccessSamurai/server/src/middleware/checkAuth.ts:27:12)\n    at checkAuth (/home/supreeth/SuccessSamurai/server/src/middleware/checkAuth.ts:6:84)\n    at Layer.handle [as handle_request] (/home/supreeth/SuccessSamurai/server/node_modules/express/lib/router/layer.js:95:5)","timestamp":"2023-05-15T16:00:33.943Z"}
+{"level":"info","message":"User successfully created","timestamp":"2023-05-15T16:03:32.466Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-15T16:03:32.536Z"}
+{"level":"info","message":"Subscription not available yet","timestamp":"2023-05-15T16:03:32.752Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-15T16:03:32.756Z"}
+{"level":"info","message":"Subscription not available yet","timestamp":"2023-05-15T16:03:32.961Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-15T16:04:11.837Z"}
+{"level":"info","message":"Successfully retreived prices","timestamp":"2023-05-15T16:04:12.070Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-15T16:04:12.074Z"}
+{"level":"info","message":"Successfully retreived prices","timestamp":"2023-05-15T16:04:12.298Z"}
+{"level":"info","message":"User successfully created","timestamp":"2023-05-15T16:05:35.212Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-15T16:05:35.297Z"}
+{"level":"info","message":"Subscription not available yet","timestamp":"2023-05-15T16:05:35.647Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-15T16:05:35.651Z"}
+{"level":"info","message":"Subscription not available yet","timestamp":"2023-05-15T16:05:35.875Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-15T16:08:31.770Z"}
+{"level":"info","message":"Successfully retreived prices","timestamp":"2023-05-15T16:08:32.159Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-15T16:08:32.163Z"}
+{"level":"info","message":"Successfully retreived prices","timestamp":"2023-05-15T16:08:32.481Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-15T16:08:45.728Z"}
+{"level":"info","message":"Successfully retreived session","timestamp":"2023-05-15T16:08:46.521Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-15T16:09:21.917Z"}
+{"level":"info","message":"User found for ME route","timestamp":"2023-05-15T16:09:21.954Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-15T16:09:21.957Z"}
+{"level":"info","message":"User found for ME route","timestamp":"2023-05-15T16:09:21.996Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-15T16:09:22.049Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-15T16:09:22.332Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-15T16:09:22.371Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-15T16:09:22.655Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-15T16:30:16.655Z"}
+{"level":"error","message":"Mongo DB connection successful","timestamp":"2023-05-15T16:30:18.652Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-15T16:30:41.601Z"}
+{"level":"error","message":"Mongo DB connection successful","timestamp":"2023-05-15T16:30:43.105Z"}
+{"level":"info","message":"User successfully logged in","timestamp":"2023-05-15T16:30:43.523Z"}
+{"level":"error","message":"Mongo DB connection successful","timestamp":"2023-05-16T06:54:24.877Z"}
+{"expiredAt":"2023-05-15T19:05:35.000Z","level":"error","message":"User not authenticated jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /home/supreeth/SuccessSamurai/server/node_modules/jsonwebtoken/verify.js:190:21\n    at getSecret (/home/supreeth/SuccessSamurai/server/node_modules/jsonwebtoken/verify.js:97:14)\n    at Object.module.exports [as verify] (/home/supreeth/SuccessSamurai/server/node_modules/jsonwebtoken/verify.js:101:10)\n    at /home/supreeth/SuccessSamurai/server/src/middleware/checkAuth.ts:24:33\n    at Generator.next (<anonymous>)\n    at /home/supreeth/SuccessSamurai/server/src/middleware/checkAuth.ts:31:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/supreeth/SuccessSamurai/server/src/middleware/checkAuth.ts:27:12)\n    at checkAuth (/home/supreeth/SuccessSamurai/server/src/middleware/checkAuth.ts:6:84)\n    at Layer.handle [as handle_request] (/home/supreeth/SuccessSamurai/server/node_modules/express/lib/router/layer.js:95:5)","timestamp":"2023-05-16T06:54:40.427Z"}
+{"expiredAt":"2023-05-15T19:05:35.000Z","level":"error","message":"User not authenticated jwt expired","name":"TokenExpiredError","stack":"TokenExpiredError: jwt expired\n    at /home/supreeth/SuccessSamurai/server/node_modules/jsonwebtoken/verify.js:190:21\n    at getSecret (/home/supreeth/SuccessSamurai/server/node_modules/jsonwebtoken/verify.js:97:14)\n    at Object.module.exports [as verify] (/home/supreeth/SuccessSamurai/server/node_modules/jsonwebtoken/verify.js:101:10)\n    at /home/supreeth/SuccessSamurai/server/src/middleware/checkAuth.ts:24:33\n    at Generator.next (<anonymous>)\n    at /home/supreeth/SuccessSamurai/server/src/middleware/checkAuth.ts:31:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/supreeth/SuccessSamurai/server/src/middleware/checkAuth.ts:27:12)\n    at checkAuth (/home/supreeth/SuccessSamurai/server/src/middleware/checkAuth.ts:6:84)\n    at Layer.handle [as handle_request] (/home/supreeth/SuccessSamurai/server/node_modules/express/lib/router/layer.js:95:5)","timestamp":"2023-05-16T06:54:40.435Z"}
+{"level":"error","message":"Email does not exists for Login","timestamp":"2023-05-16T06:54:50.886Z"}
+{"level":"info","message":"User successfully logged in","timestamp":"2023-05-16T06:54:56.727Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T06:54:56.772Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T06:54:57.281Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T06:54:57.331Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T06:54:57.791Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:03:28.480Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:03:28.971Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:10:04.905Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:10:05.459Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:10:05.504Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:10:05.869Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:10:42.175Z"}
+{"level":"info","message":"User found for ME route","timestamp":"2023-05-16T07:10:42.220Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:10:42.226Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:10:42.264Z"}
+{"level":"info","message":"User found for ME route","timestamp":"2023-05-16T07:10:42.268Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:10:42.582Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:10:42.649Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:10:42.971Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:10:48.370Z"}
+{"level":"info","message":"User found for ME route","timestamp":"2023-05-16T07:10:48.434Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:10:48.439Z"}
+{"level":"info","message":"User found for ME route","timestamp":"2023-05-16T07:10:48.486Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:10:48.494Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:10:48.874Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:10:48.922Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:10:49.285Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:11:25.124Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:11:26.007Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:11:26.059Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:11:26.330Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:11:27.751Z"}
+{"level":"info","message":"User found for ME route","timestamp":"2023-05-16T07:11:27.806Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:11:27.809Z"}
+{"level":"info","message":"User found for ME route","timestamp":"2023-05-16T07:11:27.857Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:11:27.872Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:11:28.185Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:11:28.234Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:11:28.649Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:17:44.815Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:17:45.259Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:19:37.577Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:19:38.068Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:20:40.046Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:20:40.440Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:22:13.215Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:22:13.819Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:23:35.223Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:23:35.734Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:23:55.660Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:23:56.003Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:24:08.842Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:24:09.224Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:24:16.649Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:24:17.005Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:24:25.633Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:24:26.018Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:24:41.117Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:24:41.384Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:24:50.109Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:24:50.586Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:24:57.510Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:24:57.810Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:24:57.864Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:24:58.264Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:25:02.524Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:25:03.614Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:25:04.421Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:25:04.485Z"}
+{"level":"info","message":"Successfully retreived prices","timestamp":"2023-05-16T07:25:04.680Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:25:04.683Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:25:04.782Z"}
+{"level":"info","message":"Successfully retreived prices","timestamp":"2023-05-16T07:25:04.863Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:25:06.091Z"}
+{"level":"info","message":"Successfully retreived session","timestamp":"2023-05-16T07:25:06.876Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:25:24.556Z"}
+{"level":"info","message":"User found for ME route","timestamp":"2023-05-16T07:25:24.602Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:25:24.605Z"}
+{"level":"info","message":"User found for ME route","timestamp":"2023-05-16T07:25:24.650Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:25:24.711Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:25:25.104Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:25:25.161Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:25:25.615Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:36:52.037Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:36:52.838Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:36:52.894Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:36:53.454Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:37:33.556Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:37:33.911Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:39:36.478Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:39:36.922Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:43:36.477Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:43:37.026Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:43:37.079Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:43:37.439Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:43:45.503Z"}
+{"level":"info","message":"User found for ME route","timestamp":"2023-05-16T07:43:45.548Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:43:45.552Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:43:45.596Z"}
+{"level":"info","message":"User found for ME route","timestamp":"2023-05-16T07:43:45.600Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:43:45.938Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:43:45.981Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:43:46.345Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:46:32.496Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:46:32.964Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:47:44.530Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:47:45.045Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:52:08.477Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:52:09.030Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:52:09.072Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:52:09.440Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T07:55:04.501Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T07:55:05.059Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T07:57:45.891Z"}
+{"level":"error","message":"Mongo DB connection successful","timestamp":"2023-05-16T07:57:48.679Z"}
+{"level":"info","message":"User successfully logged in","timestamp":"2023-05-16T07:57:49.126Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T07:59:43.795Z"}
+{"level":"error","message":"Mongo DB connection successful","timestamp":"2023-05-16T07:59:45.970Z"}
+{"level":"info","message":"User successfully logged in","timestamp":"2023-05-16T07:59:46.384Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:04:56.583Z"}
+{"level":"error","message":"Mongo DB connection successful","timestamp":"2023-05-16T08:04:58.689Z"}
+{"level":"info","message":"User successfully logged in","timestamp":"2023-05-16T08:04:59.138Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:08:31.094Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T08:08:31.123Z"}
+{"level":"error","message":"Mongo DB connection successful","timestamp":"2023-05-16T08:08:33.162Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T08:08:34.222Z"}
+{"level":"info","message":"User successfully logged in","timestamp":"2023-05-16T08:08:34.596Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:10:45.718Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T08:10:45.747Z"}
+{"level":"error","message":"Mongo DB connection successful","timestamp":"2023-05-16T08:10:47.838Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T08:10:48.660Z"}
+{"level":"info","message":"User successfully logged in","timestamp":"2023-05-16T08:10:48.982Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:11:10.214Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T08:11:10.244Z"}
+{"level":"error","message":"Mongo DB connection successful","timestamp":"2023-05-16T08:11:10.727Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T08:11:11.581Z"}
+{"level":"info","message":"User successfully logged in","timestamp":"2023-05-16T08:11:11.910Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:14:28.160Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T08:14:28.191Z"}
+{"level":"error","message":"Mongo DB connection successful","timestamp":"2023-05-16T08:14:30.901Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T08:14:31.873Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:14:31.935Z"}
+{"level":"info","message":"User successfully logged in","timestamp":"2023-05-16T08:14:32.223Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:17:53.018Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T08:17:53.048Z"}
+{"level":"error","message":"Mongo DB connection successful","timestamp":"2023-05-16T08:17:55.589Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T08:17:56.979Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:17:57.037Z"}
+{"level":"info","message":"User successfully logged in","timestamp":"2023-05-16T08:17:57.323Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:20:35.103Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T08:20:35.132Z"}
+{"level":"error","message":"Mongo DB connection successful","timestamp":"2023-05-16T08:20:37.168Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T08:20:38.041Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:20:38.100Z"}
+{"level":"info","message":"User successfully logged in","timestamp":"2023-05-16T08:20:38.389Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:21:32.212Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T08:21:32.244Z"}
+{"level":"error","message":"Mongo DB connection successful","timestamp":"2023-05-16T08:21:32.716Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T08:21:33.536Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:21:33.598Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T08:21:33.609Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T08:21:34.045Z"}
+{"level":"info","message":"User successfully logged in","timestamp":"2023-05-16T08:21:34.384Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:21:53.466Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T08:21:53.496Z"}
+{"level":"error","message":"Mongo DB connection successful","timestamp":"2023-05-16T08:21:58.177Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:21:58.505Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T08:21:58.512Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T08:21:58.947Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T08:21:58.975Z"}
+{"level":"info","message":"User successfully logged in","timestamp":"2023-05-16T08:21:59.279Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:22:38.691Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T08:22:38.721Z"}
+{"level":"error","message":"Mongo DB connection successful","timestamp":"2023-05-16T08:22:39.525Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T08:22:40.399Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:22:40.459Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T08:22:40.468Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T08:22:40.907Z"}
+{"level":"info","message":"User successfully logged in","timestamp":"2023-05-16T08:22:41.225Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:24:43.615Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T08:24:43.644Z"}
+{"level":"error","message":"Mongo DB connection successful","timestamp":"2023-05-16T08:24:44.267Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T08:24:46.151Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:24:46.213Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T08:24:46.222Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T08:24:46.736Z"}
+{"level":"info","message":"User successfully logged in","timestamp":"2023-05-16T08:24:47.093Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:25:38.282Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T08:25:38.316Z"}
+{"level":"error","message":"Mongo DB connection successful","timestamp":"2023-05-16T08:25:38.744Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T08:25:39.596Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:25:39.655Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T08:25:39.663Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T08:25:40.105Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:25:40.177Z"}
+{"level":"info","message":"User successfully logged in","timestamp":"2023-05-16T08:25:40.465Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:29:44.114Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T08:29:44.145Z"}
+{"level":"error","message":"Mongo DB connection successful","timestamp":"2023-05-16T08:29:46.381Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T08:29:47.194Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:29:47.255Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T08:29:47.264Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T08:29:47.705Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:29:47.766Z"}
+{"level":"info","message":"User successfully logged in","timestamp":"2023-05-16T08:29:48.042Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:31:03.748Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T08:31:03.779Z"}
+{"level":"error","message":"Mongo DB connection successful","timestamp":"2023-05-16T08:31:05.843Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T08:31:06.612Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:31:06.672Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T08:31:06.681Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T08:31:07.026Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:31:07.103Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T08:31:07.116Z"}
+{"level":"info","message":"Successfully retreived session","timestamp":"2023-05-16T08:31:07.845Z"}
+{"level":"info","message":"User successfully logged in","timestamp":"2023-05-16T08:31:08.130Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:33:04.251Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T08:33:04.282Z"}
+{"level":"error","message":"Mongo DB connection successful","timestamp":"2023-05-16T08:33:06.322Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T08:33:07.048Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:33:07.106Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T08:33:07.116Z"}
+{"level":"info","message":"Subscriptions successfully retreived","timestamp":"2023-05-16T08:33:07.571Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T08:33:07.638Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T08:33:07.647Z"}
+{"level":"info","message":"Successfully retreived session","timestamp":"2023-05-16T08:33:08.336Z"}
+{"level":"info","message":"User successfully logged in","timestamp":"2023-05-16T08:33:08.620Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T09:01:26.199Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T09:01:26.230Z"}
+{"level":"error","message":"Mongo DB connection successful","timestamp":"2023-05-16T09:01:27.920Z"}
+{"level":"info","message":"Articles successfully retreived","timestamp":"2023-05-16T09:01:28.729Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T09:01:28.785Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T09:01:28.798Z"}
+{"level":"info","message":"Articles successfully retreived","timestamp":"2023-05-16T09:01:29.237Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T09:01:29.304Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T09:01:29.313Z"}
+{"level":"info","message":"Successfully retreived session","timestamp":"2023-05-16T09:01:30.261Z"}
+{"level":"info","message":"User successfully logged in","timestamp":"2023-05-16T09:01:30.458Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T09:04:31.863Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T09:04:31.892Z"}
+{"level":"error","message":"Mongo DB connection successful","timestamp":"2023-05-16T09:04:33.581Z"}
+{"level":"info","message":"Articles successfully retreived","timestamp":"2023-05-16T09:04:34.383Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T09:04:34.443Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T09:04:34.450Z"}
+{"level":"info","message":"Articles successfully retreived","timestamp":"2023-05-16T09:04:34.891Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T09:04:34.961Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T09:04:34.971Z"}
+{"level":"info","message":"Successfully retreived session","timestamp":"2023-05-16T09:04:35.812Z"}
+{"level":"info","message":"User successfully logged in","timestamp":"2023-05-16T09:04:36.012Z"}
+{"level":"error","message":"Invalid credentials for Login","timestamp":"2023-05-16T09:04:36.201Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T09:07:47.081Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T09:07:47.109Z"}
+{"level":"error","message":"Mongo DB connection successful","timestamp":"2023-05-16T09:07:49.156Z"}
+{"level":"info","message":"Articles successfully retreived","timestamp":"2023-05-16T09:07:50.051Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T09:07:50.106Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T09:07:50.112Z"}
+{"level":"info","message":"Articles successfully retreived","timestamp":"2023-05-16T09:07:50.443Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T09:07:50.509Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T09:07:50.518Z"}
+{"level":"info","message":"Successfully retreived session","timestamp":"2023-05-16T09:07:51.235Z"}
+{"level":"info","message":"User successfully logged in","timestamp":"2023-05-16T09:07:51.434Z"}
+{"level":"error","message":"Invalid credentials for Login","timestamp":"2023-05-16T09:07:51.622Z"}
+{"level":"error","message":"Email does not exists for Login","timestamp":"2023-05-16T09:07:51.667Z"}
+{"level":"info","message":"User successfully logged in","timestamp":"2023-05-16T09:07:51.874Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T09:09:02.968Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T09:09:02.997Z"}
+{"level":"error","message":"Mongo DB connection successful","timestamp":"2023-05-16T09:09:04.181Z"}
+{"level":"info","message":"Articles successfully retreived","timestamp":"2023-05-16T09:09:05.023Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T09:09:05.077Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T09:09:05.084Z"}
+{"level":"info","message":"Articles successfully retreived","timestamp":"2023-05-16T09:09:05.533Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T09:09:05.591Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T09:09:05.600Z"}
+{"level":"info","message":"Successfully retreived session","timestamp":"2023-05-16T09:09:06.352Z"}
+{"level":"info","message":"User successfully logged in","timestamp":"2023-05-16T09:09:06.578Z"}
+{"level":"error","message":"Invalid credentials for Login","timestamp":"2023-05-16T09:09:06.784Z"}
+{"level":"error","message":"Invalid credentials for Signup","timestamp":"2023-05-16T09:09:06.799Z"}
+{"level":"error","message":"Email already exists for Signup","timestamp":"2023-05-16T09:09:06.859Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T09:10:15.242Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T09:10:15.275Z"}
+{"level":"error","message":"Mongo DB connection successful","timestamp":"2023-05-16T09:10:16.398Z"}
+{"level":"info","message":"Articles successfully retreived","timestamp":"2023-05-16T09:10:17.195Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T09:10:17.249Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T09:10:17.256Z"}
+{"level":"info","message":"Articles successfully retreived","timestamp":"2023-05-16T09:10:17.693Z"}
+{"level":"error","message":"No user logged in","timestamp":"2023-05-16T09:10:17.756Z"}
+{"level":"info","message":"User successfully authenticated","timestamp":"2023-05-16T09:10:17.774Z"}
+{"level":"info","message":"Successfully retreived session","timestamp":"2023-05-16T09:10:18.544Z"}
+{"level":"info","message":"User successfully logged in","timestamp":"2023-05-16T09:10:18.757Z"}
+{"level":"error","message":"Invalid credentials for Login","timestamp":"2023-05-16T09:10:18.964Z"}
+{"level":"error","message":"Invalid credentials for Signup","timestamp":"2023-05-16T09:10:18.980Z"}
+{"level":"error","message":"Email already exists for Signup","timestamp":"2023-05-16T09:10:19.035Z"}

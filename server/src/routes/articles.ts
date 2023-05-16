@@ -25,13 +25,13 @@ router.get("/", checkAuth, async (req, res) => {
         );
 
         if (!subscriptions.data.length) {
-            logger.info("Subscription not available yet");
+            logger.info("Articles not available yet");
             return res.json([]);
         }
 
         //@ts-ignore
         const plan = subscriptions.data[0].plan.nickname;
-        logger.info("Subscriptions successfully retreived");
+        logger.info("Articles successfully retreived");
 
         if (plan === "Basic") {
             const articles = await Article.find({ access: "Basic" });

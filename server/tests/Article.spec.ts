@@ -1,4 +1,4 @@
-import chai from "chai";
+import chai, { expect } from "chai";
 import chaiHttp from "chai-http";
 import app from "../src/index";
 import { before, after, describe } from "node:test";
@@ -18,15 +18,32 @@ after((done) => {
 
 describe("articlesAPITests", () => {
 
-    it('Fetching articles', (done) => {
+    it('Fetching no articles', (done) => {
         chai.request(app)
             .get("/articles")
             .end((err, res) => {
                 res.should.have.status(200);
+                expect(res.body).to.deep.equal({ errors: [{ msg: 'Unauthorized' }] });
                 if (err) {
                     console.log("Unable to fetch articles", err);
                 }
                 done();
-        })
-    }) 
+            })
+    });
+
+    it('Fetching all articles', (done) => {
+        const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN1cHJlQGVtYWlsLmNvbSIsImlhdCI6MTY4NDIyMDA5NiwiZXhwIjoxNjg0MjMwODk2fQ.alaWJ_s7gq6HH5wLc9nZeJUm9UgGAcf2yxmrOBMtV3A"
+        chai.request(app)
+            .get("/articles")
+            .set('Authorization', `Bearer ${token}`)
+            .end((err, res) => {
+                res.should.have.status(200);
+                expect(res.body).to.be.an('array').with.lengthOf(3);
+                if (err) {
+                    console.log("Unable to fetch articles", err);
+                }
+                done();
+            })
+    });
+
 });

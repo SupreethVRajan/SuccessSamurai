@@ -4,6 +4,7 @@ import LandingPage from "./Pages/LandingPage";
 import Article from "./Pages/Articles";
 import { ProtectedRoute } from "./Routes/ProtectedRoute";
 import ArticlesPlan from "./Pages/ArticlesPlan";
+import ArticleView from "./Pages/ArticleView";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         </Route>
         <Route path="/articleplans" element={<ProtectedRoute/>}>
           <Route path="/articleplans" element={<ArticlesPlan/>}/>
+        </Route>
+        <Route path="/articleview/:articleid" element={<ProtectedRoute/>}>
+          <Route path="/articleview/:articleid" element={<ArticleView/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

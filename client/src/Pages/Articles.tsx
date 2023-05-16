@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 interface ArticleDS {
-    id: string,
+    _id: string,
     title: string,
     imageUrl: string,
     content: string
@@ -67,14 +67,14 @@ const Article = () => {
     }, [])
     const fetchArticles = async () => {
         const { data: response } = await axios.get("http://localhost:5000/articles");
-        setArticles(response);        
+      setArticles(response);
     }
     return <Container>{articles.length ? (
         <CardsContainer>
-            {articles.map(article => (
-                <Card key={article.id}>
-                    <Image src={article.imageUrl} />
-                    <Header>{article.title}</Header>
+            {articles.map(article => ( 
+                <Card key={article._id}>
+                <Image src={article.imageUrl} />
+                <Header><Link to={"/articleview/" + article._id}>{article.title}</Link></Header>
                     <Content>{article.content}</Content>
                 </Card>
             ))}
