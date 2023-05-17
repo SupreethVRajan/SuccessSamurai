@@ -1,15 +1,30 @@
-import {Navbar, NavItem, NavLink} from "react-bootstrap";
+import {Button, Navbar, NavItem, NavLink} from "react-bootstrap";
 import {Link, useNavigate} from "react-router-dom";
-import {useContext} from "react";
+import {useContext, useEffect, useState} from "react";
 import { UserContext } from "../../Context";
 import styled from "styled-components";
+import axios from "axios";
 
 const LeftNavContainer = styled.div`
     margin-left: auto;
 `
 
+interface ArticleDS {
+    _id: string,
+    title: string,
+    imageUrl: string,
+    content: string
+}
+
+
 const Nav = () => {
     const [state, setState] = useContext(UserContext);
+    const [articles, setArticles] = useState<ArticleDS[]>([]);
+
+    const fetchArticles = async () => {
+        const { data: response } = await axios.get("http://localhost:5000/articles");
+      setArticles(response);
+    }
 
     const navigate = useNavigate();
 
@@ -22,15 +37,20 @@ const Nav = () => {
         localStorage.removeItem("token");
         navigate("/");
     }
+
+    const handleHome = () => {
+        fetchArticles();
+        articles.length ? navigate("/articles") : navigate("/");
+    }
     return <Navbar>
         <NavItem>
-            <Link to= "/" className="nav-link">Home</Link>
+            <Button onClick={handleHome} variant="secondary">Home</Button>
         </NavItem>
 
         {state.data && (
             <LeftNavContainer>
                 <NavItem>
-                    <NavLink onClick={handleLogout}>Logout</NavLink>
+                    <Button onClick={handleLogout} variant="danger">Logout</Button>
                 </NavItem>
             </LeftNavContainer>
         )}  

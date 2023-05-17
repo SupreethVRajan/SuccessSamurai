@@ -8,7 +8,7 @@ export const checkAuth = async (req: Request, res: Response, next: NextFunction)
     let token = req.header("authorization");
 
     if (!token) {
-        logger.error("No user logged in");
+        logger.error({ METHOD: req.method, ORIGINAL_URL: req.originalUrl, HTTP_VERSION: req.httpVersion, STATUS: req.statusCode, IP: req.ip, MESSAGE: "No user logged in" });
         return res.json({
             errors: [
                 {
@@ -27,10 +27,10 @@ export const checkAuth = async (req: Request, res: Response, next: NextFunction)
         )) as {email: string};
 
         req.user = user.email as string;
-        logger.info("User successfully authenticated");
+        logger.info({ METHOD: req.method, ORIGINAL_URL: req.originalUrl, HTTP_VERSION: req.httpVersion, STATUS: req.statusCode, IP: req.ip, MESSAGE: "User successfully authenticated" });
         next();
     } catch (error) {
-        logger.error("User not authenticated", error);
+        logger.error({ METHOD: req.method, ORIGINAL_URL: req.originalUrl, HTTP_VERSION: req.httpVersion, STATUS: req.statusCode, IP: req.ip, MESSAGE: "User not authenticated"});
         return res.json({
             errors: [
                 {

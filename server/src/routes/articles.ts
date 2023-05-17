@@ -25,13 +25,13 @@ router.get("/", checkAuth, async (req, res) => {
         );
 
         if (!subscriptions.data.length) {
-            logger.info("Articles not available yet");
+            logger.info({ METHOD: req.method, ORIGINAL_URL: req.originalUrl, HTTP_VERSION: req.httpVersion, STATUS: req.statusCode, IP: req.ip, MESSAGE: "Articles not available yet" });
             return res.json([]);
         }
 
         //@ts-ignore
         const plan = subscriptions.data[0].plan.nickname;
-        logger.info("Articles successfully retreived");
+        logger.info({ METHOD: req.method, ORIGINAL_URL: req.originalUrl, HTTP_VERSION: req.httpVersion, STATUS: req.statusCode, IP: req.ip, MESSAGE: "Articles successfully retreived" });
 
         if (plan === "Basic") {
             const articles = await Article.find({ access: "Basic" });

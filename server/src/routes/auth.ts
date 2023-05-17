@@ -18,7 +18,7 @@ router.post(
         const validationErrors = validationResult(req);
 
         if (!validationErrors.isEmpty()) {
-            logger.error("Invalid credentials for Signup");
+            logger.error({METHOD: req.method, ORIGINAL_URL: req.originalUrl, HTTP_VERSION: req.httpVersion, STATUS: req.statusCode, IP: req.ip, MESSAGE: "Invalid credentials for Signup"});
             
             const errors = validationErrors.array().map(error => {
                 return {
@@ -30,14 +30,10 @@ router.post(
 
         const {email, password} = req.body;
 
-        // await User.create({
-        //     email,
-        //     password
-        // });
         const user = await User.findOne({email})
 
         if (user) {
-            logger.error("Email already exists for Signup");
+            logger.error({ METHOD: req.method, ORIGINAL_URL: req.originalUrl, HTTP_VERSION: req.httpVersion, STATUS: req.statusCode, IP: req.ip, MESSAGE: "Email already exists for Signup" });
             return res.json({
                 errors: [
                     {
@@ -70,7 +66,7 @@ router.post(
             }
         );
 
-        logger.info("User successfully created");
+        logger.info({ METHOD: req.method, ORIGINAL_URL: req.originalUrl, HTTP_VERSION: req.httpVersion, STATUS: req.statusCode, IP: req.ip, MESSAGE: "User successfully created" });
         
         return res.json({errors: [],
         data: {
@@ -91,7 +87,7 @@ router.post("/login", async (req, res) =>  {
     const user = await User.findOne({email});
 
     if (!user) {
-        logger.error("Email does not exists for Login");
+        logger.error({ METHOD: req.method, ORIGINAL_URL: req.originalUrl, HTTP_VERSION: req.httpVersion, STATUS: req.statusCode, IP: req.ip, MESSAGE: "Email does not exists for Login" });
         return res.json({
             errors: [
                 {
@@ -105,7 +101,7 @@ router.post("/login", async (req, res) =>  {
     const isMatch = await bcrypt.compare(password, user.password as string);
 
     if (!isMatch) {
-        logger.error("Invalid credentials for Login");
+        logger.error({ METHOD: req.method, ORIGINAL_URL: req.originalUrl, HTTP_VERSION: req.httpVersion, STATUS: req.statusCode, IP: req.ip, MESSAGE: "Invalid credentials for Login" });
         return res.json({
             errors: [
                 {
@@ -124,7 +120,7 @@ router.post("/login", async (req, res) =>  {
         }
     );
 
-    logger.info("User successfully logged in");
+    logger.info({ METHOD: req.method, ORIGINAL_URL: req.originalUrl, HTTP_VERSION: req.httpVersion, STATUS: req.statusCode, IP: req.ip, MESSAGE: "User successfully logged in" });
 
     return res.json({
         errors: [],
@@ -143,7 +139,7 @@ router.get("/me", checkAuth, async (req, res) => {
 
     if (user) {
         
-        logger.info("User found for ME route");
+        logger.info({ METHOD: req.method, ORIGINAL_URL: req.originalUrl, HTTP_VERSION: req.httpVersion, STATUS: req.statusCode, IP: req.ip, MESSAGE: "User found for ME route" });
         return res.json({
             errors: [],
             data: {
@@ -156,7 +152,7 @@ router.get("/me", checkAuth, async (req, res) => {
         })
     }
     else {
-        logger.error("User not found for ME route");        
+        logger.error({ METHOD: req.method, ORIGINAL_URL: req.originalUrl, HTTP_VERSION: req.httpVersion, STATUS: req.statusCode, IP: req.ip, MESSAGE: "User not found for ME route" });        
         return res.json({
             errors: [
                 {

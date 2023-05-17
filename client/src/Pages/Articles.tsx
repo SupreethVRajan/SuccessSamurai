@@ -12,22 +12,24 @@ interface ArticleDS {
 }
 
 const CardsContainer = styled.div`
-  padding: 4rem 0;
+  padding: 4rem 2rem;
   display: flex;
+  flex-wrap: wrap;
 `;
 
 const Card = styled.div`
-  height: 55rem;
-  width: 33%;
+  height: 30rem;
+  width: 30%;
   box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.2);
   padding: 2rem 0.75rem;
   border-radius: 2rem;
   margin-right: 2rem;
+  margin-bottom: 20px;
 `;
 
 const Image = styled.img`
   width: 100%;
-  height: 30rem;
+  height: 50%;
   border-radius: 2rem;
 `;
 
@@ -55,7 +57,10 @@ const ErrorHeader = styled.h2`
 
 const Content = styled.p`
   overflow: hidden;
-  text-overflow: clip;
+   display: -webkit-box;
+   -webkit-line-clamp: 5; /* number of lines to show */
+           line-clamp: 5; 
+   -webkit-box-orient: vertical;
 `;
 
 const Article = () => {

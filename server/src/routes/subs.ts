@@ -12,7 +12,7 @@ router.get("/prices", checkAuth, async (req, res) => {
     const prices = await stripe.prices.list({
         apiKey: global.STRIPE_SECRET_KEY
     });
-    logger.info("Successfully retreived prices");
+    logger.info({ METHOD: req.method, ORIGINAL_URL: req.originalUrl, HTTP_VERSION: req.httpVersion, STATUS: req.statusCode, IP: req.ip, MESSAGE: "Successfully retreived prices" });
     return res.json(prices)
 })
 
@@ -36,11 +36,11 @@ router.post("/session", checkAuth, async (req, res) => {
         }, {
             apiKey: global.STRIPE_SECRET_KEY,
         });
-        logger.info("Successfully retreived session");
+        logger.info({ METHOD: req.method, ORIGINAL_URL: req.originalUrl, HTTP_VERSION: req.httpVersion, STATUS: req.statusCode, IP: req.ip, MESSAGE: "Successfully retreived session" });
         return res.json(session);
     }
     else {
-        logger.error("User not found for stripe session");
+        logger.error({ METHOD: req.method, ORIGINAL_URL: req.originalUrl, HTTP_VERSION: req.httpVersion, STATUS: req.statusCode, IP: req.ip, MESSAGE: "User not found for stripe session" });
         return res.json(null);
     }    
 })

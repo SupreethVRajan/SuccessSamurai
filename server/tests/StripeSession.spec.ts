@@ -34,8 +34,8 @@ describe("articlePackagesAPITests", () => {
             })
     });
 
-    it('Fetching prices', (done) => {
-        const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN1cHJlQGVtYWlsLmNvbSIsImlhdCI6MTY4NDIyMDA5NiwiZXhwIjoxNjg0MjMwODk2fQ.alaWJ_s7gq6HH5wLc9nZeJUm9UgGAcf2yxmrOBMtV3A"
+    it('Fetching a session', (done) => {
+        const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3Rpbmd1c2VyQGVtYWlsLmNvbSIsImlhdCI6MTY4NDI2MDk2MiwiZXhwIjoxNjg0MjcxNzYyfQ.Cc_ga6yCsE7VjKUhfezMcz4q0LarePCyI5vmfQqnbag"
         chai.request(app)
             .post("/subs/session")
             .send({
